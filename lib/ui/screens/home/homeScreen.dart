@@ -369,6 +369,8 @@ class HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         }
         return Future.value(true);
       },
+      
+    
       child: Scaffold(
         body: context.read<AppConfigurationCubit>().appUnderMaintenance()
             ? AppUnderMaintenanceContainer()

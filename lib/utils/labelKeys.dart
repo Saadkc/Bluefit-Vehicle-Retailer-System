@@ -3,7 +3,7 @@
 const String homeKey = "home";
 const String attendanceKey = "attendance";
 const String menuKey = "menu";
-const String assignmentsKey = "assignments";
+const String assignmentsKey = "Bookings";
 const String timeTableKey = "timeTable";
 const String noticeBoardKey = "noticeBoard";
 const String parentProfileKey = "parentProfile";
@@ -139,7 +139,7 @@ const String topicNameKey = "topicName";
 
 const String topicDescriptionKey = "topicDescription";
 
-const String allSubjectsKey = "allSubjects";
+const String allSubjectsKey = "all Bookings";
 
 const String pointsKey = "points";
 

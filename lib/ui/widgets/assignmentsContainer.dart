@@ -117,7 +117,7 @@ class _AssignmentsContainerState extends State<AssignmentsContainer> {
             bloc: context.read<AssignmentsTabSelectionCubit>(),
             builder: (context, state) {
               return AssignmentsSubjectContainer(
-                  cubitAndState: "assignment",
+                  cubitAndState: "bookings",
                   subjects: subjects,
                   onTapSubject: (int subjectId) {
                     context
