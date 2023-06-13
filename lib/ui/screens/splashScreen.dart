@@ -58,7 +58,7 @@ class _SplashScreenState extends State<SplashScreen> {
             );
           }
           return Center(
-              child: SvgPicture.asset(UiUtils.getImagePath("appLogo.svg")));
+              child: Image.asset(UiUtils.getImagePath("BlueFitV2.jpeg")));
         },
       ),
     );

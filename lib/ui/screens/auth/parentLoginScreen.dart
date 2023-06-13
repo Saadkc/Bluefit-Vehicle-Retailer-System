@@ -349,6 +349,10 @@ class _ParentLoginScreenState extends State<ParentLoginScreen>
     return Scaffold(
       body: Stack(
         children: [
+          Positioned(
+              top: 20,
+              // left: 20,
+              child: Image.asset(UiUtils.getImagePath("BlueFitV1.jpeg"),  width: 200, height: 200,)),
           _buildUpperPattern(),
           _buildLowerPattern(),
           _buildLoginForm(),

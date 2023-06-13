@@ -345,6 +345,10 @@ class _StudentLoginScreenState extends State<StudentLoginScreen>
     return Scaffold(
       body: Stack(
         children: [
+          Positioned(
+              top: 20,
+              // left: 20,
+              child: Image.asset(UiUtils.getImagePath("BlueFitV1.jpeg"),  width: 200, height: 200,)),
           _buildLowerPattern(),
           _buildUpperPattern(),
           _buildLoginForm(),
