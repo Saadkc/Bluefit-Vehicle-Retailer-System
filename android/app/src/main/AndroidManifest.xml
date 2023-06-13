@@ -10,7 +10,7 @@ package="com.wrteam.eschool">
   
    
    <application
-        android:label="eSchool"
+        android:label="bluefit"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true"

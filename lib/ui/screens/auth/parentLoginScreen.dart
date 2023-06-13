@@ -237,36 +237,39 @@ class _ParentLoginScreenState extends State<ParentLoginScreen>
                     Center(
                       child: BlocConsumer<SignInCubit, SignInState>(
                         listener: (context, state) {
-                          if (state is SignInSuccess) {
-                            //
-                            context.read<AuthCubit>().authenticateUser(
-                                jwtToken: state.jwtToken,
-                                isStudent: state.isStudentLogIn,
-                                parent: state.parent,
-                                student: state.student);
+                          // if (state is SignInSuccess) {
+                          //   //
+                          //   context.read<AuthCubit>().authenticateUser(
+                          //       jwtToken: state.jwtToken,
+                          //       isStudent: state.isStudentLogIn,
+                          //       parent: state.parent,
+                          //       student: state.student);
 
-                            Navigator.of(context)
-                                .pushReplacementNamed(Routes.parentHome);
-                          } else if (state is SignInFailure) {
-                            UiUtils.showCustomSnackBar(
-                                context: context,
-                                errorMessage:
-                                    UiUtils.getErrorMessageFromErrorCode(
-                                        context, state.errorMessage),
-                                backgroundColor:
-                                    Theme.of(context).colorScheme.error);
-                          }
+                            // Navigator.of(context)
+                            //     .pushReplacementNamed(Routes.parentHome);
+                          // } else if (state is SignInFailure) {
+                          //   UiUtils.showCustomSnackBar(
+                          //       context: context,
+                          //       errorMessage:
+                          //           UiUtils.getErrorMessageFromErrorCode(
+                          //               context, state.errorMessage),
+                          //       backgroundColor:
+                          //           Theme.of(context).colorScheme.error);
+                          // }
                         },
                         builder: (context, state) {
                           return CustomRoundedButton(
                             onTap: () {
-                              if (state is SignInInProgress) {
-                                return;
-                              }
+                              
+                            Navigator.of(context)
+                                .pushReplacementNamed(Routes.parentHome);
+                              // if (state is SignInInProgress) {
+                              //   return;
+                              // }
 
-                              FocusScope.of(context).unfocus();
+                              // FocusScope.of(context).unfocus();
 
-                              _signInParent();
+                              // _signInParent();
                             },
                             widthPercentage: 0.8,
                             backgroundColor:
