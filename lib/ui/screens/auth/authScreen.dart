@@ -87,11 +87,11 @@ class _AuthScreenState extends State<AuthScreen> with TickerProviderStateMixin {
                                   horizontal:
                                       MediaQuery.of(context).size.width *
                                           (0.1)),
-                              child: Text(
-                                context
-                                    .read<AppConfigurationCubit>()
-                                    .getAppConfiguration()
-                                    .schoolName,
+                              child: Text("Bluefit- Vehicle Management app",
+                                // context
+                                //     .read<AppConfigurationCubit>()
+                                //     .getAppConfiguration()
+                                //     .schoolName,
                                 maxLines: 2,
                                 style: TextStyle(
                                     fontSize: 24.0,
@@ -103,26 +103,26 @@ class _AuthScreenState extends State<AuthScreen> with TickerProviderStateMixin {
                             SizedBox(
                               height: boxConstraints.maxHeight * (0.0125),
                             ),
-                            Padding(
-                              padding: EdgeInsets.symmetric(
-                                  horizontal:
-                                      MediaQuery.of(context).size.width *
-                                          (0.1)),
-                              child: Text(
-                                context
-                                    .read<AppConfigurationCubit>()
-                                    .getAppConfiguration()
-                                    .schoolTagline,
-                                textAlign: TextAlign.center,
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                    fontSize: 16.0,
-                                    fontWeight: FontWeight.w300,
-                                    color: UiUtils.getColorScheme(context)
-                                        .onBackground),
-                              ),
-                            ),
+                            // Padding(
+                            //   padding: EdgeInsets.symmetric(
+                            //       horizontal:
+                            //           MediaQuery.of(context).size.width *
+                            //               (0.1)),
+                            //   child: Text("saad",
+                            //     // context
+                            //     //     .read<AppConfigurationCubit>()
+                            //     //     .getAppConfiguration()
+                            //     //     .schoolTagline,
+                            //     textAlign: TextAlign.center,
+                            //     maxLines: 2,
+                            //     overflow: TextOverflow.ellipsis,
+                            //     style: TextStyle(
+                            //         fontSize: 16.0,
+                            //         fontWeight: FontWeight.w300,
+                            //         color: UiUtils.getColorScheme(context)
+                            //             .onBackground),
+                            //   ),
+                            // ),
                             SizedBox(
                               height: boxConstraints.maxHeight * (0.05),
                             ),

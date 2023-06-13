@@ -110,8 +110,8 @@ const String youHaveBeenMissedKey = "youHaveBeenMissed";
 const String signInKey = "signIn";
 const String grNumberKey = "grNumber";
 const String loginAsKey = "loginAs";
-const String parentKey = "parent";
-const String studentKey = "student";
+const String parentKey = "sub user";
+const String studentKey = "user";
 
 const String pleaseEnterEmailKey = "pleaseEnterEmail";
 const String pleaseEnterPasswordKey = "pleaseEnterPassword";
